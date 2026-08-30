@@ -5,6 +5,6 @@ export async function connectDB() {
   if (!uri) {
     throw new Error("MONGODB_URI is not set in environment variables");
   }
-  await mongoose.connect(uri);
+  await mongoose.connect(uri, { dbName: "shopco" });
   console.log("MongoDB connected");
 }
