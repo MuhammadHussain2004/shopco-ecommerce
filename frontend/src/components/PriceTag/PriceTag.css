@@ -1,0 +1,35 @@
+.price-tag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.price-tag__current {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.price-tag--lg .price-tag__current {
+  font-size: 32px;
+}
+
+.price-tag__old {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-text-light);
+  text-decoration: line-through;
+}
+
+.price-tag--lg .price-tag__old {
+  font-size: 24px;
+}
+
+.price-tag__discount {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-danger);
+  background: var(--color-danger-bg);
+  border-radius: var(--radius-pill);
+  padding: 3px 12px;
+}

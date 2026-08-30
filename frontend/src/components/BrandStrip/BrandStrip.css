@@ -1,0 +1,30 @@
+.brand-strip {
+  background: var(--color-black);
+  padding-block: 28px;
+}
+
+.brand-strip__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  align-items: center;
+  justify-items: center;
+}
+
+.brand-strip__logo {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 640px) {
+  .brand-strip__grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .brand-strip__logo {
+    height: 28px;
+  }
+}

@@ -1,0 +1,149 @@
+.pdp-loading {
+  padding-block: 100px;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.pdp__breadcrumb {
+  padding-block: 20px;
+}
+
+.pdp__top {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: var(--space-section);
+}
+
+.pdp__info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pdp__name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.pdp__description {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.pdp__divider {
+  height: 1px;
+  background: var(--color-border);
+}
+
+.pdp__option-label {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.pdp__add-row {
+  display: flex;
+  gap: 12px;
+}
+
+.pdp__add-btn {
+  flex: 1;
+}
+
+.pdp__tabs-section {
+  padding-bottom: var(--space-section);
+}
+
+.pdp__tab-content {
+  padding-top: 24px;
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.pdp__reviews-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.pdp__reviews-header h2 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.pdp__reviews-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pdp__reviews-sort {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text);
+  background: var(--color-white);
+}
+
+.pdp__reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.pdp__load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.pdp__related {
+  padding-bottom: var(--space-section);
+}
+
+.pdp__related-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.pdp__related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 12px;
+}
+
+@media (min-width: 768px) {
+  .pdp__top {
+    flex-direction: row;
+  }
+
+  .pdp__top > * {
+    flex: 1;
+  }
+
+  .pdp__reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pdp__related-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .pdp__name {
+    font-size: 32px;
+  }
+}

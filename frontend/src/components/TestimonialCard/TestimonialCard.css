@@ -1,0 +1,30 @@
+.testimonial-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  width: 280px;
+}
+
+@media (min-width: 1024px) {
+  .testimonial-card {
+    width: 340px;
+  }
+}
+
+.testimonial-card__name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.testimonial-card__verified {
+  color: var(--color-success);
+}
+
+.testimonial-card__comment {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}

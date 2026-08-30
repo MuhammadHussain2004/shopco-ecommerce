@@ -1,0 +1,7 @@
+# Original design reference files (large, not needed for the app itself)
+*.pdf
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db

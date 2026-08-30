@@ -1,0 +1,74 @@
+.order-summary {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.order-summary__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.order-summary__row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: var(--color-text-muted);
+  padding-block: 8px;
+}
+
+.order-summary__row--discount span:last-child {
+  color: var(--color-danger);
+}
+
+.order-summary__row--total {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.order-summary__divider {
+  height: 1px;
+  background: var(--color-border);
+  margin-block: 8px;
+}
+
+.order-summary__promo {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.order-summary__promo-input {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-surface);
+  border-radius: var(--radius-pill);
+  padding: 12px 16px;
+  color: var(--color-text-muted);
+}
+
+.order-summary__promo-input input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.order-summary__promo-message {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.order-summary__promo-message--success {
+  color: var(--color-success);
+}
+
+.order-summary__promo-message--error {
+  color: var(--color-danger);
+}

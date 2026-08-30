@@ -1,0 +1,30 @@
+.quantity-stepper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--color-surface);
+  border-radius: var(--radius-pill);
+  padding: 10px 16px;
+  width: fit-content;
+}
+
+.quantity-stepper button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+}
+
+.quantity-stepper button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.quantity-stepper span {
+  min-width: 16px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
